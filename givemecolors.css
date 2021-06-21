@@ -1,0 +1,231 @@
+h1 {
+  color: rgb(72, 162, 252);
+  font-size: 30px;
+  font-style: normal;
+  text-shadow: 3px 1px 3px black;
+}
+h2 {
+  color: rgb(124, 238, 130);
+  font-size: 25px;
+  font-style: normal;
+  text-shadow: 3px 1px 3px black;
+}
+h3 {
+  color: cyan;
+  font-size: 18px;
+  text-shadow: 3px 1px 3px black;
+}
+h4 {
+  color: rgb(1, 255, 200);
+  font-size: 15px;
+  text-shadow: 2px 0.5px 1px black;
+}
+body {
+  background-color: rgb(111, 148, 36);
+}
+:link {
+  color: deepskyblue;
+}
+:visited {
+  color: lime;
+}
+aside a {
+  text-shadow: 1.5px 0px 1px black;
+}
+aside > h2 {
+  text-shadow: 2px 0px 0.3px black;
+  color: rgb(23, 129, 124);
+}
+header {
+  background: linear-gradient(
+    70deg,
+    white 0%,
+    lightblue 5%,
+    rgb(135, 235, 213) 15%,
+    mediumturquoise 25%,
+    rgb(60, 165, 161) 40%,
+    teal 60%,
+    black 100%
+  );
+  border-radius: 13px;
+  border-style: ridge;
+  text-shadow: 3px 1px 5px black;
+  margin-bottom: 10px;
+}
+nav {
+  background: linear-gradient(
+    90deg,
+    white 0%,
+    lightblue 5%,
+    rgb(135, 235, 213) 15%,
+    mediumturquoise 25%,
+    rgb(60, 165, 161) 40%,
+    teal 60%,
+    black 100%
+  );
+  border-radius: 13px;
+  border-style: ridge;
+  text-shadow: 3px 0.5px 3px black;
+  color: cornsilk;
+}
+main {
+  background: linear-gradient(
+    110deg,
+    white 0%,
+    lightblue 5%,
+    rgb(135, 235, 213) 15%,
+    mediumturquoise 25%,
+    rgb(60, 165, 161) 40%,
+    teal 60%,
+    black 100%
+  );
+  border-radius: 13px;
+  border-style: ridge;
+  text-shadow: 3px 0.5px 3px black;
+  color: cornsilk;
+}
+aside {
+  background: linear-gradient(
+    135deg,
+    white 0%,
+    lightblue 5%,
+    rgb(135, 235, 213) 15%,
+    mediumturquoise 25%,
+    rgb(60, 165, 161) 40%,
+    teal 60%,
+    black 100%
+  );
+  border-radius: 13px;
+  border-style: ridge;
+  text-shadow: 3px 0.5 3px black;
+}
+input:valid {
+  border-style: hidden hidden groove;
+  border-color: rgb(0, 212, 35);
+  background-color: rgb(175, 238, 180);
+  border-width: 3px;
+}
+input:invalid {
+  border-style: hidden hidden solid;
+  border-color: rgb(204, 1, 1);
+  background-color: rgb(255, 149, 158);
+  border-width: 3px;
+}
+input:active {
+  background-color: rgb(209, 186, 208);
+}
+input:focus {
+  background-color: white;
+}
+legend {
+  border-style: hidden solid;
+  border-color: grey;
+  border-radius: 16px;
+  border-width: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+fieldset {
+  border-style: solid hidden hidden;
+  border-width: 2px;
+  border-color: grey;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0px 80px 0px 80px;
+}
+a:hover {
+  color: teal;
+}
+button:hover {
+  color: rgb(175, 238, 180);
+}
+.button1,
+.button2 {
+  border-radius: 13px;
+  border-style: groove;
+  background-color: teal;
+  color: turquoise;
+  border-width: 3.5px;
+  font-style: bold;
+  font-size: 15px;
+  margin-left: 80px;
+  margin-bottom: 15px;
+  box-shadow: 3px 3px 5px black;
+  text-shadow: 2px 1px 0.1 black;
+}
+#bild {
+  float: right;
+}
+.clear {
+  clear: right;
+}
+#logo {
+  display: inline-block;
+}
+#titel {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+footer {
+  color: white;
+  border-radius: 5px;
+  border-color: darkslategrey;
+  background-color: rgb(54, 165, 132);
+  border-width: 2px;
+  border-style: solid;
+}
+nav li {
+  border-radius: 8px;
+  border-style: groove;
+  background-color: teal;
+  color: turquoise;
+  border-width: 3px;
+  font-style: bold;
+  font-size: 15px;
+  text-shadow: 2px 1px 0.1px black;
+  border-color: black;
+  padding: 0px 20px 0px 20px;
+}
+nav li {
+  display: inline;
+  margin: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+nav a:hover {
+  color: rgb(175, 238, 180);
+}
+nav a:link {
+  color: turquoise;
+}
+.table {
+  border: black groove;
+  border-radius: 15px;
+}
+.table th {
+  background-color: navy;
+  color: cornsilk;
+}
+.table tr:nth-of-type(odd) > td {
+  background-color: rgb(13, 128, 128);
+}
+.table tr:nth-of-type(even) > td {
+  background-color: rgb(194, 185, 25);
+}
+[href*="@"]:before {
+  content: "\2709";
+}
+* {
+  font-family: Helvetica;
+}
+
+.moving {
+  position: sticky;
+  top: 0px;
+}
+.fest {
+  position: sticky;
+  bottom: 0px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Neuer Podcast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="givemecolors.css">
+</head>
+<body>
+  <header >
+    <img class="moving" src="picture/logo.png" width="700"
+    height="175" alt="Synapsis, Titel der Web-Anwendung " id="logo"/>
+    <h1 id="titel">Formular zum Erstellung des Podcasts</h1>
+  </header>
+  <nav class="moving">
+    <ul>
+      <li>
+          <a href="index.html">Liste der Abbonierten Podcasts</a>
+        </li>
+        <li>
+          <a href="podcast.html">Details zum Podcast</a>
+        </li>
+        <li>
+          <a href="episode.html">Details zur Episode</a>
+        </li>
+        <li>
+          <a href="newPodcast.html">Neuen Podcast hinzufügen</a>
+        </li>
+    </ul>
+    <br />
+  </nav>
+  <main>
+    <form action=https://labs.inf.fh-dortmund.de/podcastService/testCreatePodcast.php method="POST">
+      <fieldset>
+        <legend>
+          <h3><u><em>Hauptinformation</em></u></h3>
+        </legend>
+        <h4><label><strong>Titel:</strong><br />
+          <input name="pctitle" type="text" size="20" maxlength="40" placeholder="Bitte, Titel eingeben" autofocus
+            required />
+        </label></h4>
+        <h4><label>
+          <strong>Beschreibung:</strong><br />
+          <textarea cols="50" rows="10" name="pcdescription" maxlength="500"
+            placeholder="Bitte, kurze Beschreibung zum Podcast einfügen"></textarea>
+        </label></h4>
+        <br />
+        <h4><strong>Kategorie(n):</strong></h4>
+        <ol>
+          <li>
+            <input name="pccategories" type="checkbox" value="Politik" />
+            Politik
+          </li>
+          <li>
+            <input name="pccategories" type="checkbox" value="Gesellschaft" />
+            Gesellschaft
+          </li>
+          <li>
+            <input name="pccategories" type="checkbox" value="Informatik" />
+            Informatik
+          </li>
+          <li>
+            <input name="pccategories" type="checkbox" value="Kunst" />
+            Kunst
+          </li>
+          <li>
+            <input name="pccategories" type="checkbox" value="Religion" />
+            Religion
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3><u><em>Verantwortliche Personen</em></u></h3>
+        </legend>
+        <label><strong>Autor(en):</strong><br />
+          <input name="pcautors" type="text" size="50" maxlength="70"
+            placeholder="z.B. Illia Malyar, Zizhao Chen..."
+            pattern="^[A-Z]{1}[\D\s]{0,}[^&#44;\d\s]$"/></label><br /><br />
+        <label><strong>Name des Besitzers:</strong><br />
+          <input name="pcownername" type="text" size="25" maxlength="50" required placeholder="Max Mustermann"
+            pattern="^[\w\s]{1,}$" /></label><br /><br />
+        <label><strong>E-mail des Besitzers:</strong><br />
+          <input name="pcowneremail" type="email" size="30" maxlength="50" placeholder="maxmustermann@gmail.com"
+            pattern="^[\w]{1,}[\w.+-]{0,}@[\w]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3><u><em>Update</em></u></h3>
+        </legend>
+        <strong>Datum:</strong>
+        <input 
+            name="pclastupdatedate"
+            type="date" 
+            value="2021.01.01" 
+            min="2020.01.01" 
+            max="2021.31.05"
+            required />
+        <strong>Uhrzeit:</strong>
+        <input name="pclastupdatetime" type="time" value="00:00" min="00:00" max="23:59" required>
+      </fieldset>
+      <button class="button1" type="submit" style="height: 50px; width: 200px;" ><strong>Neuen Podcast
+          erstellen</strong></button>
+    </form>
+  </main>
+  <aside title="Neueste Episoden">
+    <h2>Neueste Episoden</h2>
+    <ul>
+      <li>
+        <a href="https://workingdraft.de/478/"
+          >Revision 478: Abschweifen mit TypeScript 4.3</a
+        >
+      </li>
+      <li>
+        <a href="https://workingdraft.de/477/"
+          >Revision 477: Komponentenbibliotheken und Design Systeme</a
+        >
+      </li>
+    </ul>
+  </aside>
+  <footer class="fest">Alle rechte sind vorbehalten &copy; Illia Malyar</footer>
+</body>
+
+</html>
