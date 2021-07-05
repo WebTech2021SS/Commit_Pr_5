@@ -1,6 +1,7 @@
 #box {
   display: flex;
   flex-flow: column unwrap;
+  flex: 4 2 100%;
 }
 #mainbox {
   display: flex;
