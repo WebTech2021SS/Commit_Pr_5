@@ -1,0 +1,58 @@
+#box {
+  display: flex;
+  flex-flow: column unwrap;
+}
+#mainbox {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 4 2 75%;
+  margin: 1% 0.5% 1% 0%;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+#asidebox {
+  display: flex;
+  flex: 4 0.7 25%;
+  padding: 1% 1% 1% 1%;
+  margin: 1% 0% 1% 0%;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+#sectionbox {
+  display: flex;
+  flex: 4 2 75%;
+  flex-flow: column;
+  padding: 1% 1% 1.5% 1%;
+  align-items: center;
+}
+#articlebox {
+  flex: 4 2 75%;
+  padding: 1% 1% 1% 1%;
+}
+#navbox {
+  display: flex;
+  flex: 4 2 100%;
+  justify-content: center;
+}
+#footbox {
+  flex: 4 2 100%;
+}
+#headbox {
+  display: flex;
+  flex: 4 2 100%;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex: 4 2 100%;
+  padding: 10% 2% 2% 2%;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+#ul {
+  display: flex;
+  flex-flow: column;
+  flex: 4 2 100%;
+  padding: 0% 2% 0% 2%;
+  align-items: flex-start;
+}
