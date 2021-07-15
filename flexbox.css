@@ -1,14 +1,18 @@
+#big {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 4 2 100%;
+}
 #box {
   display: flex;
-  flex-flow: column unwrap;
   flex: 4 2 100%;
+  flex-flow: column unwrap;
 }
 #mainbox {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   flex: 4 2 75%;
   margin: 1% 0.5% 1% 0%;
-  flex-flow: column wrap;
   justify-content: flex-start;
 }
 #asidebox {
@@ -32,28 +36,43 @@
 }
 #navbox {
   display: flex;
+  flex-flow: row wrap;
   flex: 4 2 100%;
   justify-content: center;
 }
 #footbox {
+  display: flex;
   flex: 4 2 100%;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 #headbox {
   display: flex;
   flex: 4 2 100%;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 form {
   display: flex;
-  flex: 4 2 100%;
+  flex-flow: row wrap;
+  flex: 4 2 75%;
   padding: 10% 2% 2% 2%;
   align-items: baseline;
-  justify-content: flex-start;
+  justify-content: center;
 }
-#ul {
+#ul1 {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   flex: 4 2 100%;
   padding: 0% 2% 0% 2%;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+#ul2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
